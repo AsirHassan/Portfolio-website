@@ -1,12 +1,8 @@
-// script.js - Custom JavaScript for dark portfolio site
-
-// Initialize AOS for animations
 AOS.init({
   duration: 1000,
   once: true,
 });
 
-// Smooth scrolling for internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -20,7 +16,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Optional: Highlight active section on scroll
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
